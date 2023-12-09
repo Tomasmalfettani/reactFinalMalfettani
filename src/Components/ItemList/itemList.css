@@ -1,0 +1,41 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor .card {
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contenedor .card h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.contenedor .card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.contenedor .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .contenedor .card {
+        width: 48%;
+    }
+}
